@@ -70,5 +70,5 @@ const Portfolio = () => {
     </div>
   );
 };
-<div></div>
+
 export default Portfolio;
