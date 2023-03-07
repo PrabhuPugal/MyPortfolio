@@ -11,29 +11,35 @@ const Portfolio = () => {
     {
       id: 1,
       src: arrayDestruct,
+      link: "https://github.com/PrabhuPugal/Social-Media-Application"
     },
     {
       id: 2,
       src: reactParallax,
+      link:"https://github.com/PrabhuPugal/Criminal-Investigation-System"
     },
     {
       id: 3,
       src: navbar,
+      link:"https://fsadchat.netlify.app"
     },
     {
       id: 4,
       src: reactSmooth,
+      link:""
     },
     {
       id: 5,
       src: installNode,
+      link:"https://github.com/PrabhuPugal/Math-Bot-RASA"
     },
     {
       id: 6,
       src: reactWeather,
+      link:"https://github.com/PrabhuPugal/BigMart-Sales-Prediction-With-Deployment"
     },
   ];
-
+  const handleClick=(link)=>{window.open(link,"_blank")}
   return (
     <div
       name="portfolio"
@@ -48,7 +54,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src,link }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -59,7 +65,7 @@ const Portfolio = () => {
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Demo
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={()=>handleClick(link)}>
                   Code
                 </button>
               </div>
