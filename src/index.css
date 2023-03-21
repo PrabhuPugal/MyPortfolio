@@ -8,4 +8,14 @@
   html{
     font-family: 'Raleway' , sans-serif;
   }
+
+  ::-webkit-scrollbar{
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #239be650;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #239AE6;
+    border-radius:10px ;}
 }
